@@ -1,15 +1,29 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef, useMemo} from 'react';
 
 function CounterFunction(props) {
 
     const [number, setNumber] = useState(0);
 
+    //componentDidMount with useEffect
     useEffect(() => {
-        console.log('useEffect(() => {...}, [])[Function]')
+        console.log('componentDidMount[Function]');
 
-        return () => console.log('clean up');
-    }, [number]);
+        //componentWillUnmount with useEffect
+        return () => {
+            console.log('componentWillUnmount[Function]')
+        }
+    }, []);
 
+    //componentDidUpdate with useEffect
+    const mounted = useRef(false);
+
+    useEffect(() => {
+        if (!mounted.current) {
+            mounted.current = true;
+        } else {
+            console.log('componentDidUpdate[Function]')
+        }
+    });
 
     const handleIncrease = () => {
         setNumber(number + 1);

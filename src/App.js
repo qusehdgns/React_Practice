@@ -1,8 +1,8 @@
 import React from 'react';
 
 import MyName from './MyName_Practice/MyName';
-import CounterFunction from "./LifeCycle_Practice/CounterFunction";
-import CounterClass from "./LifeCycle_Practice/CounterClass";
+
+import LifeCycleApp from "./LifeCycle_Practice/LifeCycleApp";
 
 import ShowApp from "./Function_Practice/ShowApp";
 
@@ -10,20 +10,22 @@ import CounteruseEffect from "./useEffect_Practice/CounteruseEffect";
 
 import UseStateTest from "./useState_Practice/UseStateTest";
 
+import UseLayoutEffectTest from "./useLayoutEffect_Practice/UseLayoutEffectTest";
+
 function App() {
     return (
         <>
             <MyName/>
-            <CounterFunction/>
-            <CounterClass/>
-
-            <ShowApp />
-
-            <CounteruseEffect />
-
-            <p></p>
-
-            <UseStateTest />
+            <p/>
+            <LifeCycleApp/>
+            <p/>
+            <ShowApp/>
+            <p/>
+            <CounteruseEffect/>
+            <p/>
+            <UseStateTest/>
+            <p/>
+            <UseLayoutEffectTest/>
         </>
     );
 }

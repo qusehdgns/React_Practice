@@ -8,18 +8,18 @@ class CounterClass extends Component {
             number: 0
         };
 
-        console.log('constructor[Class]');
+        // console.log('constructor[Class]');
     }
 
     componentDidMount() {
         console.log('componentDidMount[Class]');
     }
 
-    shouldComponentUpdate(nextProps, nextState) {
-        console.log('shouldComponentUpdate[Class]');
-        if (nextState.number % 3 === 0) return false;
-        return true;
-    }
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     console.log('shouldComponentUpdate[Class]');
+    //     if (nextState.number % 3 === 0) return false;
+    //     return true;
+    // }
 
     componentDidUpdate(prevProps, prevState) {
         console.log('componentDidUpdate[Class]');
