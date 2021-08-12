@@ -1,4 +1,6 @@
-import React, {useState, useEffect, useLayoutEffect} from 'react';
+import React, {useState} from 'react';
+import {useEffect} from 'react';
+// import {useLayoutEffect} from 'react';
 
 function UseLayoutEffectTest(props) {
 

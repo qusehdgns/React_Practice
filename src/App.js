@@ -12,6 +12,8 @@ import UseStateTest from "./useState_Practice/UseStateTest";
 
 import UseLayoutEffectTest from "./useLayoutEffect_Practice/UseLayoutEffectTest";
 
+import ReactMemoApp from "./ReactMemo_Practice/ReactMemoApp";
+
 function App() {
     return (
         <>
@@ -26,6 +28,8 @@ function App() {
             <UseStateTest/>
             <p/>
             <UseLayoutEffectTest/>
+            <p/>
+            <ReactMemoApp/>
         </>
     );
 }
