@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SecondChildAppwithMemo(props) {
+function SecondChildAppwithoutMemo(props) {
     return (
         <div>
             {console.log('Render without ReactMemo')}
@@ -9,4 +9,4 @@ function SecondChildAppwithMemo(props) {
     );
 }
 
-export default SecondChildAppwithMemo;
+export default SecondChildAppwithoutMemo;

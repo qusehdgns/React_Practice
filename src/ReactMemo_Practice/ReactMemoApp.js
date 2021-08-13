@@ -8,6 +8,7 @@ function ReactMemoApp(props) {
 
     return (
         <div>
+            {console.log(reactNum)}
             <FirstChildApp reactNum={reactNum}/>
             <button onClick={() => setReactNum(reactNum + 1)}>ReactMemo Testing</button>
         </div>

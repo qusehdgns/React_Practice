@@ -11,4 +11,5 @@ function SecondChildApp(props) {
 
 export default React.memo(SecondChildApp);
 
+// React.Memo 없는 경우
 // export default SecondChildApp;

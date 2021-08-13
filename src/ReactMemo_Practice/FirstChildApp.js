@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SecondChildApp from "./SecondChildApp";
-import SecondChildAppwithMemo from "./SecondChildAppwithMemo";
+import SecondChildAppwithoutMemo from "./SecondChildAppwithoutMemo";
 
 function FirstChildApp(props) {
 
@@ -9,11 +9,13 @@ function FirstChildApp(props) {
         <div>
             {props.reactNum}
 
+            {/*props 전달 X*/}
             {/*<SecondChildApp/>*/}
-            <SecondChildApp reactNum={props.reactNum}/>
+            {/*<SecondChildAppwithoutMemo/>*/}
 
-            {/*<SecondChildAppwithMemo/>*/}
-            <SecondChildAppwithMemo reactNum={props.reactNum}/>
+            {/*props 전달 O*/}
+            <SecondChildApp reactNum={props.reactNum}/>
+            <SecondChildAppwithoutMemo reactNum={props.reactNum}/>
         </div>
     )
 }
