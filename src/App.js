@@ -13,8 +13,10 @@ import React from 'react';
 // import UseLayoutEffectTest from "./useLayoutEffect_Practice/UseLayoutEffectTest";
 //
 // import ReactMemoApp from "./ReactMemo_Practice/ReactMemoApp";
+//
+// import UseContextApp from "./useContext_Practice/UseContextApp";
 
-import UseContextApp from "./useContext_Practice/UseContextApp";
+import PropTypesApp from "./PropTypes_Practice/PropTypesApp";
 
 function App() {
     return (
@@ -26,7 +28,8 @@ function App() {
             {/*<UseStateTest/>*/}
             {/*<UseLayoutEffectTest/>*/}
             {/*<ReactMemoApp/>*/}
-            <UseContextApp/>
+            {/*<UseContextApp/>*/}
+            <PropTypesApp/>
         </>
     );
 }
